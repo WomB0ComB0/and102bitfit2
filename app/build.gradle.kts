@@ -2,11 +2,9 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
 }
-
 android {
     namespace = "com.example.and102_bitfit_2"
     compileSdk = 34
-
     defaultConfig {
         applicationId = "com.example.and102_bitfit_2"
         minSdk = 33
@@ -16,7 +14,6 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -34,9 +31,7 @@ android {
         jvmTarget = "1.8"
     }
 }
-
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
