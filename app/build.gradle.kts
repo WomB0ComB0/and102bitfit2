@@ -1,6 +1,9 @@
 plugins {
-    alias(libs.plugins.androidApplication)
+    alias(libs.plugins.androidApplication) apply false
     alias(libs.plugins.jetbrainsKotlinAndroid)
+//    alias(libs.plugins.kotlinParcelize)
+//    alias(libs.plugins.jetbrainsKotlinSerialization)
+//    alias(libs.plugins.kotlinKapt)
 }
 
 android {
@@ -36,13 +39,23 @@ android {
 }
 
 dependencies {
-
+//    implementation(libs.org.jetbrains.kotlin.stdlib)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    implementation(libs.androidx.activity)
+//    implementation(libs.google.android.material)
     implementation(libs.androidx.constraintlayout)
+//    implementation(libs.codepath.libraries.asynchttpclient)
+//    implementation(libs.androidx.recyclerview.recyclerview)
+//    implementation(libs.androidx.recyclerview.recyclerviewSelection)
+//    implementation(libs.github.bumptech.glide.glide)
+//    implementation(libs.google.code.gson)
+//    implementation(libs.jetbrains.kotlinx.serialization.json)
+//    kapt(libs.github.bumptech.glide.compiler)
     testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+//    androidTestImplementation(libs.androidx.test.ext.junit)
+//    androidTestImplementation(libs.androidx.test.espresso.espressoCore)
+//    implementation(libs.androidx.room.runtime)
+//    implementation(libs.androidx.room.ktx)
+//    kapt(libs.androidx.room.compiler)
+//    implementation(libs.androidx.fragment.fragmentKtx)
 }
